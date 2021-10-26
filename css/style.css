@@ -14,6 +14,9 @@ body {
 
 .container {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
 }
 
@@ -24,12 +27,12 @@ body {
   overflow: hidden;
   max-width: 700px;
   position: relative;
-  background: rgba( 255, 255, 255, 0.25 );
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-  backdrop-filter: blur( 5.5px );
-  -webkit-backdrop-filter: blur( 5.5px );
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
   border-radius: 10px;
-  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 /* slides */
@@ -51,4 +54,15 @@ body {
   right: 10%;
   cursor: pointer;
   z-index: 10;
+}
+
+.dots__dot {
+  height: 10px;
+  width: 10px;
+  cursor: pointer;
+  border: none;
+}
+
+.active-dot {
+  background-color: #2b2d2f !important;
 }
